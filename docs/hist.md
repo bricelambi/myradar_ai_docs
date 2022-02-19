@@ -1,4 +1,4 @@
-## Make a Plot of Historical Data
+# Make a Plot of Historical Data
 
 This example will pull a chunk of historical data for two points as a netcdf file, open it with xarray and plot the snod and wspd variables using pandas and seaborn.  The goal of this example is to demonstrate how easy it is to pull continuous time series data.  This example also shows how our data is ready to be used with xarray/pandas/seaborn which are common data science tools that readers may be familiar with.
 

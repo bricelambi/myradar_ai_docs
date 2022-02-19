@@ -1,4 +1,4 @@
-## Build a Power Prediction Model ##
+# Build a Power Prediction Model #
 
 Using power production data from Texas wind farms (http://www.ercot.com/gridinfo/load/load_hist/), lookup historical wind speed data and train a power prediction model.  This example shows how the data downloaded from our API is ready to be used in a Machine Learning scenario with very little effort.
 

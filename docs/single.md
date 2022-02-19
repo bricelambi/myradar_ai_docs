@@ -1,5 +1,5 @@
 
-## Make a point request and display a plot ##
+# Make a point request and display a plot #
 
 The goal of this tutorial is to demonstrate querying two lat/lon points for the current weather forecast, then display a plot of the data.  The following python script will make a request to the API, load that into a pandas dataframe, then plot on the screen using g seaborn.
 
