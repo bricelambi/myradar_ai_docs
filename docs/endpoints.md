@@ -1,7 +1,5 @@
 
-# Endpoints and Reference
-
-## Points ##
+# Points 
 
 The "points" endpoint can be used for getting a single forecast cycle for one or more points.  For every point that is requested, you will receive a time series for each weather variable provided.  This endpoint has the following parameters:
 
@@ -21,7 +19,7 @@ The JSON response for a point request has the following structure:
 Each weather variable below 'data' will contain a 2d array whose length on the first dimension is the number of points requested.  The 'valid_times' variable is an array of epoch timestamps that matches the length of the time series data.  Each point's data will be at its corresponding index in the array.  See data dictionary below for description of variables and units
 
 
-## Routes ##
+# Routes 
 
 The "routes" endpoint will perform a driving directions lookup between an origin and destination then provide a single time series that represents the weather forecast at each point along the route.  Unlike the 'points' endpoint, the 'routes' endpoint will always return only one time series for each weather variable.  This endpoint accepts the following parameters:
 
@@ -45,7 +43,7 @@ The JSON response for a route request has the following structure:
 
 Each weather variable below 'time_series' will contain a 1d array that is the length of the route as provided by the driving directions enging.  'valid_times' is a list of epoch timestamps that represents the time the mapping engine believes you will arrive at that waypoint.  The 'points' string is an encoded polyline that contains the lat/lon points the mapping engine provided.
 
-## Historical Data ##
+# Historical Data 
 
 The 'histdata' endpoint builds a continuous time series of data for one or more points between a begin time and end time.  This endpoint accepts the following parameters:
 
@@ -84,7 +82,7 @@ data:
 ```
 
 
-## 2D ##
+# 2D 
 
 The 2D endpoint provides weather data as 256x256 mercator tiles with several options for encoding.  This endpoint follows the typical x/y/zoom system and accepts the following url path parameters:
 
@@ -101,7 +99,7 @@ https://wxroutingapp.azurewebsites.net/fcst_tile/hrrr.precip.surface/20211210.12
 This will return a PNG...talk more about encoding options here
 
 
-## Data Dictionary ##
+# Data Dictionary 
 
 The 1d time series data dictionary is as follows:
 
