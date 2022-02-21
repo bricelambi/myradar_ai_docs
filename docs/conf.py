@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'myradar-ai-docs'
-copyright = '2022, Brice'
-author = 'Brice'
+copyright = '2022, MyRadar'
+author = 'MyRadar.AI'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,13 +39,14 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+html_logo = "my-radar-logo.png"
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'classic'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

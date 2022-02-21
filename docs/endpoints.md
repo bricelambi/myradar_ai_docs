@@ -1,4 +1,6 @@
 
+# Endpoints and Reference
+
 ## Points ##
 
 The "points" endpoint can be used for getting a single forecast cycle for one or more points.  For every point that is requested, you will receive a time series for each weather variable provided.  This endpoint has the following parameters:
