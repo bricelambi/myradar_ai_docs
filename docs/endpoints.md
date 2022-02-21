@@ -106,11 +106,12 @@ The 1d time series data dictionary is as follows:
   * vddsf - Visible Diffuse Downward Solar Flux w/m^2
   * vbdsf - Visible Beam Downward Solar Flux w/m^2
   * rad - Downward Short-Wave Radiation Flux w/m^2
+  * pres - pressure Pa
   * d_rad - Lagged rad
   * d_prate - Lagged precip rate
   * d_snod - Lagged snow depth
   * prate - Precip Rate mm/hr
-  * ptype - precip type
+  * ptype - precip type 1=Wet,2=Mix,3=Frozen
   * rh - Relative Humidity 0-100
   * snod - Snow Depth mm
   * cloud_cover - Cloud Cover 0-100
