@@ -48,8 +48,8 @@ Each weather variable below 'time_series' will contain a 1d array that is the le
 The 'histdata' endpoint builds a continuous time series of data for one or more points between a begin time and end time.  This endpoint accepts the following parameters:
 
   + begin_time (url path parameter) - begin time in format YYYYmmdd.HHMM
-  + end_time (url path parameter) - end time in format YYYYmmdd.HHMM
-  + latlons - 2d array of lat/lon points as JSON string 
+  + end_time (url path parameter) - end time in format YYYYmmdd.HHMM (max 30 days)
+  + latlons - 2d array of lat/lon points as JSON string (max 50 points)
 
 This endpoint will return a NetCDF with the following structure
 
